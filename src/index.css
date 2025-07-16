@@ -1,0 +1,218 @@
+:root {
+  --border-color: #0000001a;
+}
+
+* {
+  font-family: "Inter", sans-serif !important;
+  -webkit-user-select: none; 
+  -moz-user-select: none;   
+  -ms-user-select: none;     
+  user-select: none;         
+}
+
+html, body{
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+}
+
+.logo{
+  font-weight: bold;
+}
+
+.login-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container .mask {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  box-shadow: 0px 0px 10px 0px #0000000d;
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+}
+
+.login-button{
+  width: 300px;
+}
+
+.login-container .mask .input-password {
+  cursor: pointer;
+}
+
+.container-top-bar{
+  width: calc(100% - 50px);
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 999999;
+  background: #f4f4f4;
+  cursor: pointer;
+}
+
+.container-top-bar .top-bar {
+  width: 100%;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-bar {
+  width: 500px;
+}
+
+.email-avatar{
+  margin-top: -5px;
+}
+
+.id-avatar{
+  font-size: 20px;
+}
+
+.game-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.card-game{
+  width: 300px !important;
+  cursor: pointer;
+}
+
+.card-image{
+  width: 250px;
+  height: 250px;
+}
+
+.card-image > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.platforms{
+  display: flex;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.platform-logo{
+  width: 20px;
+}
+
+.loading-bar{
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  padding-bottom: 40px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  width: 100%;
+}
+
+.critic{
+  display: flex;
+  gap: 10px;
+  font-size: 20px;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.main-content{
+  display: flex;
+}
+
+.filter-section{
+  min-width: 280px;
+  max-width: 280px;
+  height: calc(100vh - 70px);
+  border-right: 1px solid var(--border-color);
+  position: sticky;
+  top: 70px;
+}
+
+.menu-title{
+  padding-left: 20px;
+}
+
+.id-avatar{
+  font-size: 12px;
+}
+
+.floating-chat{
+  width: 60px;
+  height: 60px;
+  background-color: #000;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 10000px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  cursor: pointer;
+  z-index: 9999999;
+}
+
+.chat {
+  max-width: 200px;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+.area-text{
+  height: 60px;
+  position: absolute;
+  bottom: 60px;
+  width: calc(100% - 48px);
+  box-shadow: 0px 0px 5px 0px #00000036;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.area-text > textarea {
+  width: 95%;
+  height: 40px;
+  margin-top: 5px;
+  margin-left: 5px;
+  border: 0px;
+  overflow: hidden;
+  resize: none; 
+}
+
+.area-text > textarea:focus{
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.send-button{
+  position: absolute;
+  bottom: 15px;
+  right: 25px;
+}
+
+.game-detail{
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
