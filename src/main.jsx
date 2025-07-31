@@ -11,7 +11,8 @@ import GameDetail from './routes/game-detail';
 import RegisterRoute from './routes/signup';
 
 console.log = () => {};
-console.error = () => {},
+console.error = () => {};
+console.debug = () => {};
 
 initSupabase();
 
