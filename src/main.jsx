@@ -10,7 +10,8 @@ import 'animate.css';
 import GameDetail from './routes/game-detail';
 import RegisterRoute from './routes/signup';
 
-
+console.log = () => {};
+console.error = () => {},
 initSupabase();
 
 createRoot(document.getElementById('root')).
