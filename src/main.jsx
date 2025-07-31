@@ -12,6 +12,7 @@ import RegisterRoute from './routes/signup';
 
 console.log = () => {};
 console.error = () => {},
+
 initSupabase();
 
 createRoot(document.getElementById('root')).
